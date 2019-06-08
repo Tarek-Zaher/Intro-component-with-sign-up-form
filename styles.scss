@@ -1,0 +1,101 @@
+$primary-red: hsl(0, 100%, 74%);
+$primary-green: hsl(154, 59%, 51%);
+$blue-accent: hsl(248, 32%, 49%);
+$neutral-dark-blue: hsl(249, 10%, 26%);
+$neutral-grayish-blue: hsl(246, 25%, 77%);
+$font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body, html {
+  font-size: 16px;
+  margin: 0;
+  font-family: $font-family;
+}
+
+body {
+  background-color: $primary-red;
+  background-image: url("images/bg-intro-mobile.png");
+  background-size: cover;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 5em auto;
+  width: 85%;
+  text-align: center;
+  .info {
+    margin-bottom: 3.5em;
+    h1, p {
+      color: white;
+    }
+  }
+  .cta {
+    .tryBtn {
+      width: 100%;
+      padding: 1em;
+      background-color: $blue-accent;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: .8rem;
+      line-height: 1.2rem;
+      box-shadow: 0 7px 0 hsla(0, 1%, 0%, 15%);
+      margin-bottom: 2em;
+      .very-bold {
+        font-weight: 700;
+      }
+    }
+    form {
+      width: calc(100% - 2em);
+      background-color: white;
+      border-radius: 10px;
+      padding: 1em;
+      input {
+        display: block;
+        width: 85%;
+        padding: 1.2em;
+        margin: 1.2em auto;
+        border: 1px $neutral-grayish-blue solid;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: .8rem;
+      }
+      .claimBtn {
+        width: calc(100% - 1em);
+        padding: 1em;
+        background-color: $primary-green;
+        border: none;
+        border-radius: 5px;
+        font-size: .9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        box-shadow: 0 5px 0 hsl(154, 50%, 51%);
+      }
+      p.disclaimer {
+        width: 80%;
+        margin: 2em auto;
+        color: $neutral-grayish-blue;
+        font-size: .6rem;
+      }
+      p span {
+        color: $primary-red;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .wrapper {
+    .info {
+      
+    }
+    .cta {
+
+
+    }
+  }
+
+}

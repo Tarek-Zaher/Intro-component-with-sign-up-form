@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+body, html {
+  font-size: 16px;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  background-color: #ff7a7a;
+  background-image: url("images/bg-intro-mobile.png");
+  background-size: cover;
+  padding: 0; }
+
+.wrapper {
+  margin: 5em auto;
+  width: 85%;
+  text-align: center; }
+  .wrapper .info {
+    margin-bottom: 3.5em; }
+    .wrapper .info h1, .wrapper .info p {
+      color: white; }
+  .wrapper .cta .tryBtn {
+    width: 100%;
+    padding: 1em;
+    background-color: #6055a5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 2em; }
+    .wrapper .cta .tryBtn .very-bold {
+      font-weight: 700; }
+  .wrapper .cta form {
+    width: calc(100% - 2em);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em; }
+    .wrapper .cta form input {
+      display: block;
+      width: 85%;
+      padding: 1.2em;
+      margin: 1.2em auto;
+      border: 1px #b9b6d3 solid;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: .8rem; }
+    .wrapper .cta form .claimBtn {
+      width: calc(100% - 1em);
+      padding: 1em;
+      background-color: #38cc8c;
+      border: none;
+      border-radius: 5px;
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      box-shadow: 0 5px 0 #44c18a; }
+    .wrapper .cta form p.disclaimer {
+      width: 80%;
+      margin: 2em auto;
+      color: #b9b6d3;
+      font-size: .6rem; }
+    .wrapper .cta form p span {
+      color: #ff7a7a;
+      font-weight: 600; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -55,12 +55,19 @@ body {
         display: block;
         width: 85%;
         padding: 1.3em;
-        margin: 1.2em auto;
+        margin: 1.2em auto 0 auto;
         border: 1px $neutral-grayish-blue solid;
         border-radius: 5px;
         font-weight: 700;
         font-size: .8rem;
         color: $neutral-dark-blue;
+      }
+      p.errorText {
+        color: $primary-red;
+        font-style: italic;
+        font-size: .6rem;
+        text-align: right;
+        margin: 5px 2em 2em 0;
       }
       .claimBtn {
         width: calc(100% - 1em);

@@ -54,12 +54,13 @@ body {
       input {
         display: block;
         width: 85%;
-        padding: 1.2em;
+        padding: 1.3em;
         margin: 1.2em auto;
         border: 1px $neutral-grayish-blue solid;
         border-radius: 5px;
         font-weight: 700;
         font-size: .8rem;
+        color: $neutral-dark-blue;
       }
       .claimBtn {
         width: calc(100% - 1em);
@@ -87,14 +88,25 @@ body {
   }
 }
 
-@media (min-width: 375px) {
-  .wrapper {
-    .info {
-      
-    }
-    .cta {
-
-
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    background-image: url("images/bg-intro-desktop.png");
+    .wrapper {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4em;
+      .info {
+        align-self: center;
+        text-align: left;
+        h1 {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
     }
   }
 

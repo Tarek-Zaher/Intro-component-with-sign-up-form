@@ -27,9 +27,9 @@
     </div>
 
     <div class="cta">
-      <button type="button" name="tryBtn"class="tryBtn"><span class="very-bold">Try it free 7 days</span> then<br>$20/mo. thereafter</button>
+      <button type="button" name="tryBtn"class="tryBtn"><span class="very-bold">Try it free 7 days</span> then $20/mo. thereafter</button>
 
-      <form name="claimForm" action="index.html" onsubmit="return validateForm()" method="post">
+      <form name="claimForm" action="index.html" onsubmit="return validateForm(); return validateEmail()" method="post">
         <input type="text" name="firstName" placeholder="First Name">
         <p id="fNameEmptyError" class="errorText"></p>
         <input type="text" name="lastName" placeholder="Last Name">
